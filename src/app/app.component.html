@@ -1,4 +1,4 @@
-<ng-container *ngIf="categories$ | async as categories">
+<ng-container *ngIf="categories$ | async as categories; else loading">
   <nav fxLayout="row">
     <div fxLayout="column" class="menu" *ngFor="let category of categories">
       <a href="#">{{ category.categoryName }}</a>
@@ -12,3 +12,7 @@
     </div>
   </nav>
 </ng-container>
+
+<ng-template #loading>
+  <p>Cargando...</p>
+</ng-template>
