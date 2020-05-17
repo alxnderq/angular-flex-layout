@@ -1,0 +1,39 @@
+nav {
+  background-color: #f3f3f3;
+  border: 0;
+}
+
+.menu > a,
+.submenu > .submenu-items > a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.submenu-items {
+  min-width: 500px;
+}
+
+.submenu > .submenu-items > a {
+  font-size: 14px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 49px;
+  background-color: #fff;
+  border-top: 5px solid #f7c246;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.menu:hover {
+  background-color: #f7c246;
+}
+
+.menu:hover .submenu {
+  display: flex;
+}
